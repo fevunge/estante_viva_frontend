@@ -1,0 +1,216 @@
+{
+  "theme": {
+    "mode": "dark",
+    "rationale": "Ambiente imersivo de leitura e estudos noturnos, destacando as cores pastéis saturadas Catppuccin Mocha solicitadas pelo usuário sobre um fundo profundo e focado."
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#1e1e2e",
+        "on_bg": "#cdd6f4",
+        "on_bg_muted": "#a6adc8",
+        "roles": {
+          "link": "#89b4fa",
+          "error": "#f38ba8",
+          "success": "#a6e3a1",
+          "warning": "#f9e2af",
+          "accent_highlight": "#f5c2e7"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#181825",
+        "on_bg": "#cdd6f4",
+        "on_bg_muted": "#a6adc8",
+        "roles": {
+          "link": "#89b4fa",
+          "error": "#f38ba8",
+          "success": "#a6e3a1"
+        }
+      },
+      {
+        "name": "card",
+        "kind": "solid",
+        "bg": "#313244",
+        "on_bg": "#cdd6f4",
+        "on_bg_muted": "#a6adc8",
+        "roles": {
+          "link": "#89b4fa",
+          "border": "#45475a"
+        }
+      },
+      {
+        "name": "header_glass",
+        "kind": "glass",
+        "contrast_against": "#181825",
+        "guarantee": "backdrop-blur-xl bg-[#1e1e2e]/85 border-b border-[#313244]",
+        "on_bg": "#cdd6f4",
+        "on_bg_muted": "#a6adc8",
+        "roles": {
+          "link": "#89b4fa"
+        }
+      },
+      {
+        "name": "chat_user_bubble",
+        "kind": "solid",
+        "bg": "#89b4fa",
+        "on_bg": "#11111b",
+        "on_bg_muted": "#313244"
+      },
+      {
+        "name": "chat_ai_bubble",
+        "kind": "solid",
+        "bg": "#313244",
+        "on_bg": "#cdd6f4",
+        "on_bg_muted": "#a6adc8"
+      },
+      {
+        "name": "book_cover_fallback_1",
+        "kind": "solid",
+        "bg": "#585b70",
+        "on_bg": "#ffffff",
+        "on_bg_muted": "#cdd6f4"
+      },
+      {
+        "name": "book_cover_fallback_2",
+        "kind": "solid",
+        "bg": "#89b4fa",
+        "on_bg": "#11111b",
+        "on_bg_muted": "#1e1e2e"
+      },
+      {
+        "name": "book_cover_fallback_3",
+        "kind": "solid",
+        "bg": "#f5c2e7",
+        "on_bg": "#11111b",
+        "on_bg_muted": "#313244"
+      },
+      {
+        "name": "book_cover_fallback_4",
+        "kind": "solid",
+        "bg": "#94e2d5",
+        "on_bg": "#11111b",
+        "on_bg_muted": "#1e1e2e"
+      },
+      {
+        "name": "book_cover_fallback_5",
+        "kind": "solid",
+        "bg": "#f9e2af",
+        "on_bg": "#11111b",
+        "on_bg_muted": "#313244"
+      },
+      {
+        "name": "book_cover_fallback_6",
+        "kind": "solid",
+        "bg": "#f38ba8",
+        "on_bg": "#11111b",
+        "on_bg_muted": "#313244"
+      },
+      {
+        "name": "book_cover_fallback_7",
+        "kind": "solid",
+        "bg": "#a6e3a1",
+        "on_bg": "#11111b",
+        "on_bg_muted": "#181825"
+      }
+    ],
+    "user_palette": {
+      "black": "#585b70",
+      "red": "#f38ba8",
+      "green": "#a6e3a1",
+      "yellow": "#f9e2af",
+      "blue": "#89b4fa",
+      "magenta": "#f5c2e7",
+      "cyan": "#94e2d5",
+      "white": "#a6adc8"
+    },
+    "accent": "#89b4fa",
+    "on_accent": "#11111b"
+  },
+  "typography": {
+    "font_family_heading": "Lora Variable, Georgia, serif",
+    "font_family_sans": "Plus Jakarta Sans Variable, system-ui, sans-serif",
+    "font_family_mono": "JetBrains Mono Variable, monospace",
+    "scale_px": {
+      "display": 56,
+      "h1": 42,
+      "h2": 32,
+      "h3": 24,
+      "h4": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "letter_spacing": {
+      "headings": "tracking-tight",
+      "labels": "tracking-wider uppercase",
+      "body": "tracking-normal"
+    }
+  },
+  "entry_surfaces": {
+    "/": "split hero showcase — atmospheric gallery introduction left with search & filter dock, real 3D interactive book carousel & shelf right",
+    "/book/:id": "split study workbench — responsive PDF reader viewport (left 60%) + persistent AI interactive study assistant & note companion (right 40%)",
+    "/admin/login": "focused security portal — minimalist dark card with Catppuccin accent borders and Clerk/admin credentials flow",
+    "/admin": "dense management studio — book catalog CRUD table, drag-and-drop PDF uploader, color-coded generated cover previewer and metrics"
+  },
+  "grids_and_layouts": {
+    "gallery_grid": "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 py-8",
+    "reader_split": "h-[calc(100vh-4rem)] grid grid-cols-1 lg:grid-cols-12 overflow-hidden",
+    "pdf_pane": "lg:col-span-7 xl:col-span-8 h-full flex flex-col border-r border-[#313244] bg-[#181825]",
+    "chatbot_pane": "lg:col-span-5 xl:col-span-4 h-full flex flex-col bg-[#1e1e2e]",
+    "admin_dashboard_grid": "grid grid-cols-1 lg:grid-cols-12 gap-8 p-8"
+  },
+  "motion": {
+    "book_3d_transform": {
+      "container": "perspective: 1200px",
+      "card_style": "transform-style: preserve-3d; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;",
+      "hover_effect": "transform: rotateY(-22deg) rotateX(8deg) translateZ(20px) scale(1.04); box-shadow: -15px 20px 30px rgba(0, 0, 0, 0.6);",
+      "spine_effect": "position: absolute; left: 0; top: 0; width: 14px; height: 100%; transform: rotateY(-90deg) translateX(-14px); transform-origin: left; background: rgba(0,0,0,0.35);"
+    },
+    "transitions": "transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, transform 0.2s ease"
+  },
+  "accessibility": {
+    "contrast_compliance": "All body texts meet WCAG AA 4.5:1 ratio against their background surfaces (#cdd6f4 on #1e1e2e is 11.5:1; #a6adc8 on #1e1e2e is 7.2:1).",
+    "focus_states": "focus-visible:ring-2 focus-visible:ring-[#89b4fa] focus-visible:outline-none focus-visible:ring-offset-2 focus-visible:ring-offset-[#1e1e2e]",
+    "reduced_motion": "Support @media (prefers-reduced-motion) disabling intensive 3D rotations and keeping subtle opacity transitions."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "category": "hero_background_texture",
+        "url": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwyfHxib29rJTIwY292ZXIlMjBsaWJyYXJ5JTIwcmVhZGluZ3xlbnwwfHx8fDE3OTM5MjY5MTZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Library atmosphere with warm books for subtle dark ambient overlay banner"
+      },
+      {
+        "category": "sample_cover_classic",
+        "url": "https://images.unsplash.com/photo-1621827979802-6d778e161b28?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxib29rJTIwY292ZXIlMjBsaWJyYXJ5JTIwcmVhZGluZ3xlbnwwfHx8fDE3OTM5MjY5MTZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Book pile cover art for realistic library demo books"
+      },
+      {
+        "category": "sample_study_corner",
+        "url": "https://images.unsplash.com/photo-1494809610410-160faaed4de0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwzfHxib29rJTIwY292ZXIlMjBsaWJyYXJ5JTIwcmVhZGluZ3xlbnwwfHx8fDE3OTM5MjY5MTZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Study aisle library depth visual"
+      }
+    ]
+  },
+  "component_hierarchy": {
+    "navigation": "Navbar with brand logo, search bar quick-toggle, categories dropdown, 'Sala de Estudos' link, and Admin access badge",
+    "book_gallery_card": "Interactive 3D book object featuring realistic spine, edge page depth, user palette badge, category pill, and action CTA ('Abrir Leitor & Estudo')",
+    "generated_cover_canvas": "Dynamic aesthetic cover generator using typography (Lora + JetBrains Mono) with geometric borders and user's Catppuccin palette for books without image files",
+    "pdf_reader_module": "PDF viewer with page jumper, zoom in/out, fit-width, continuous scroll / single page toggle, text search, and bookmarking",
+    "study_ai_assistant": "Side panel with streaming chat, book context pill, suggested prompt chips ('Resumir este capítulo', 'Principais conceitos', 'Gerar quiz de 3 perguntas'), and remaining daily question counter",
+    "admin_curation_suite": "Admin dashboard with quick stats (Total Livros, Categorias, Leitores Ativos), book management modal, PDF drag-drop uploader, cover color selector, and delete confirmation dialog"
+  },
+  "instructions_to_main_agent": [
+    "Language is strictly pt-BR across all user interfaces, tooltips, buttons, and chatbot placeholders (e.g. 'Galeria de Livros', 'Ambiente de Estudos', 'Pergunte à IA sobre o livro...', 'Páginas', 'Administração').",
+    "Implement the 3D book card using CSS 3D transforms (preserve-3d, rotateY, rotateX on hover, realistic drop-shadow with amber/blue glow tint) for smooth 60fps performance on all devices.",
+    "For books uploaded without a cover image, automatically generate a beautifully styled typographic cover using one of the preset user palette colors (#585b70, #f38ba8, #a6e3a1, #f9e2af, #89b4fa, #f5c2e7, #94e2d5).",
+    "The reader view on route /book/:id must feel like a dedicated study environment: full height layout, distraction-free PDF viewer on left/center with rich controls, and integrated AI assistant on the right panel.",
+    "Include a simulated/real streaming study chatbot response with simulated token streaming or backend LLM endpoint, default suggested quick-prompts relevant to reading and a remaining daily question badge (e.g. 'Perguntas hoje: 8/10').",
+    "Admin routes: /admin/login (email/password login flow) and /admin (CRUD catalog, upload PDF files, edit metadata, delete books). Public routes require zero login.",
+    "Add 'data-testid' attributes to all interactive elements: 'book-card-{id}', 'book-read-button-{id}', 'pdf-zoom-in', 'pdf-zoom-out', 'pdf-next-page', 'pdf-prev-page', 'ai-chat-input', 'ai-chat-send-btn', 'admin-login-submit', 'admin-add-book-btn', 'category-filter-{category}'.",
+    "Ensure dark mode is applied by default in index.html with class='dark' and rich Catppuccin Mocha tokens in index.css."
+  ]
+}
